@@ -1,7 +1,7 @@
 from flask import Flask
 
 # WSGI app is created 
-app =Flask(__name__) #WSGI standard interacting with the server
+app =Flask(__name__) #WSGI standard interacting with the server  <starting point of our function which gets executed in our py file>
 
 @app.route('/') #decorator with the binding with function arg-(URL) (/ - root url)
 def welcome(): #binding function
