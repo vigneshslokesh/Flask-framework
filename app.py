@@ -5,7 +5,8 @@ app =Flask(__name__) #WSGI standard interacting with the server  <starting point
 
 @app.route('/') #decorator with the binding with function arg-(URL) (/ - root url)
 def welcome(): #binding function
-    return 'Welcome to my Flask framework'
+    num = int(input("Enter a number"))
+    return print(num*3)
 
 @app.route('/members') 
 def members():
